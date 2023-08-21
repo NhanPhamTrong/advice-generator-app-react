@@ -1,0 +1,53 @@
+@import "../assets/global-styles/global-styles";
+
+.container {
+    width: 95vw;
+    padding: 2.5rem 1.5rem 0 1.5rem;
+    background: $surface;
+    border-radius: 0.5rem;
+    color: $on-surface;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+        color: $primary;
+        font-size: 0.625rem;
+        font-weight: 400;
+        letter-spacing: 0.175rem;
+    }
+
+    h2 {
+        margin: 1.75rem;
+        font-size: 1.25rem;
+        line-height: 2rem;
+
+        span {
+            i {
+                margin-right: 0.175rem;
+                transform: translateY(-100%);
+            }
+        }
+    }
+
+    button {
+        height: 4rem;
+        width: 4rem;
+        background: $primary;
+        border-radius: 10rem;
+        transform: translateY(50%);
+    }
+
+    button:hover {
+        box-shadow: 0 0 1rem $primary,
+                    0 0 2rem $primary,
+                    0 0 3rem $primary;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 34rem;
+    }
+}
