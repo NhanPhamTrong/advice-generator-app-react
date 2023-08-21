@@ -55,7 +55,7 @@ export const App = () => {
     }
 
     return (
-        <div className="container">
+        <main className="container">
             <h1>{"ADVICE #" + advice.id}</h1>
             <h2>
                 <span><i class="fa-solid fa-quote-left fa-2xs"></i></span>
@@ -66,6 +66,6 @@ export const App = () => {
             <button type="button" onClick={ChangeAdvice}>
                 <img src={iconDice} alt="Change advice" />
             </button>
-        </div>
+        </main>
     )
 }
